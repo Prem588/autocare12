@@ -1,0 +1,1045 @@
+.mechanics-page {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.mechanics-page-heading,
+.mechanic-section-heading,
+.mechanic-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.mechanics-page-heading {
+  margin-bottom: 20px;
+}
+
+.mechanics-page-heading h1 {
+  margin: 4px 0 7px;
+}
+
+.mechanics-page-heading p {
+  margin: 0;
+  color: #738096;
+  font-size: 14px;
+}
+
+.mechanic-eyebrow {
+  color: #71809a;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.3px;
+}
+
+.mechanic-button {
+  min-height: 41px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 0 15px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background .15s, border-color .15s;
+}
+
+.mechanic-button-primary {
+  color: #fff;
+  background: #245bd6;
+}
+
+.mechanic-button-primary:hover {
+  background: #194bb9;
+}
+
+.mechanic-button-secondary {
+  color: #46546a;
+  border-color: #dce2eb;
+  background: #fff;
+}
+
+.mechanic-button-secondary:hover {
+  border-color: #bdc8d8;
+  background: #f7f9fc;
+}
+
+.mechanic-data-notice {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 11px 14px;
+  margin-bottom: 18px;
+  border: 1px solid #dce9ff;
+  border-radius: 9px;
+  color: #59677c;
+  background: #edf4ff;
+  font-size: 12px;
+}
+
+.mechanic-data-notice > span {
+  width: 8px;
+  height: 8px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: #3974e8;
+}
+
+.mechanic-notice {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 9px 12px;
+  margin-bottom: 16px;
+  border: 1px solid #bbf7d0;
+  border-radius: 9px;
+  color: #166534;
+  background: #f0fdf4;
+  font-size: 13px;
+}
+
+.mechanic-notice .mechanic-icon-button {
+  margin-left: auto;
+  color: #166534;
+}
+.mechanic-notice.mechanic-notice-error {
+  color: #b42318;
+  background: #fff0ef;
+  border-color: #fecaca;
+}
+.mechanic-notice.mechanic-notice-error .mechanic-icon-button { color: #b42318; }
+
+.mechanic-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 15px;
+  margin-bottom: 22px;
+}
+
+.mechanic-metric-card {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  min-width: 0;
+  padding: 18px;
+  border: 1px solid #e8ecf3;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 3px 12px #1b2b4508;
+}
+
+.mechanic-metric-icon {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 11px;
+}
+
+.mechanic-metric-blue { color: #245bd6; background: #eaf1ff; }
+.mechanic-metric-green { color: #16834a; background: #e5f8ee; }
+.mechanic-metric-amber { color: #b77908; background: #fff5dc; }
+.mechanic-metric-slate { color: #59677c; background: #eef1f5; }
+.mechanic-metric-violet { color: #7147c8; background: #f1eaff; }
+
+.mechanic-metric-card p {
+  margin: 0 0 5px;
+  color: #738096;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.mechanic-metric-card strong {
+  font-size: 23px;
+  line-height: 1;
+}
+
+.mechanic-table-card {
+  overflow: hidden;
+  margin-bottom: 20px;
+  border: 1px solid #e8ecf3;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 3px 12px #1b2b4508;
+}
+
+.mechanic-section-heading {
+  padding: 20px 21px 16px;
+}
+
+.mechanic-section-heading h2 {
+  margin: 0 0 5px;
+  font-size: 17px;
+}
+
+.mechanic-section-heading p {
+  margin: 0;
+  color: #738096;
+  font-size: 12px;
+}
+
+.mechanic-sort-control,
+.mechanic-filter-control,
+.mechanic-search-control {
+  height: 38px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 10px;
+  border: 1px solid #dce2eb;
+  border-radius: 7px;
+  color: #8290a4;
+  background: #fff;
+}
+
+.mechanic-sort-control select,
+.mechanic-filter-control select,
+.mechanic-search-control input {
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  color: #263449;
+  background: transparent;
+  font: inherit;
+  font-size: 12px;
+}
+
+.mechanic-sort-control select,
+.mechanic-filter-control select {
+  appearance: none;
+  cursor: pointer;
+}
+
+.mechanic-sort-control > svg:last-child,
+.mechanic-filter-control > svg {
+  flex: 0 0 auto;
+  pointer-events: none;
+}
+
+.mechanic-filters {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 21px 16px;
+}
+
+.mechanic-search-control {
+  flex: 1;
+  min-width: 180px;
+}
+
+.mechanic-search-control input {
+  width: 100%;
+}
+
+.mechanic-filter-control {
+  width: 180px;
+}
+
+.mechanic-filter-control select {
+  width: 100%;
+}
+
+.mechanic-clear-filters {
+  padding: 6px 3px;
+  border: 0;
+  color: #245bd6;
+  background: none;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.mechanic-search-control:focus-within,
+.mechanic-filter-control:focus-within,
+.mechanic-sort-control:focus-within {
+  border-color: #75a0ef;
+  box-shadow: 0 0 0 3px #245bd61a;
+}
+
+.mechanic-table-scroll {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.mechanic-table {
+  width: 100%;
+  min-width: 1320px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.mechanic-table th,
+.mechanic-table td {
+  padding: 13px 12px;
+  border-bottom: 1px solid #edf0f5;
+  color: #526075;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.mechanic-table th {
+  color: #748198;
+  background: #f8fafd;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .4px;
+  text-transform: uppercase;
+}
+
+.mechanic-table th:first-child,
+.mechanic-table td:first-child {
+  padding-left: 21px;
+}
+
+.mechanic-table th:last-child,
+.mechanic-table td:last-child {
+  padding-right: 17px;
+}
+
+.mechanic-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.mechanic-table-person {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mechanic-avatar {
+  width: 38px;
+  height: 38px;
+  display: inline-grid;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 50%;
+  color: #245bd6;
+  background: #e4edff;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.mechanic-avatar-large {
+  width: 58px;
+  height: 58px;
+  font-size: 18px;
+}
+
+.mechanic-table-person > div {
+  display: grid;
+  gap: 4px;
+}
+
+.mechanic-name-link {
+  width: fit-content;
+  padding: 0;
+  border: 0;
+  color: #253247;
+  background: none;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.mechanic-name-link:hover {
+  color: #245bd6;
+}
+
+.mechanic-table-person > div > span {
+  color: #8792a4;
+  font-size: 10px;
+}
+
+.mechanic-experience {
+  color: #27364b;
+}
+
+.mechanic-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 25px;
+  padding: 4px 9px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.mechanic-status > span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.mechanic-status-available { color: #15803d; background: #dcfce7; }
+.mechanic-status-busy { color: #a16207; background: #fef3c7; }
+.mechanic-status-on-leave { color: #6d28d9; background: #ede9fe; }
+.mechanic-status-inactive { color: #667085; background: #eef1f5; }
+.mechanic-status-working { color: #1d4ed8; background: #dbeafe; }
+.mechanic-status-on-leave-today { color: #6d28d9; background: #ede9fe; }
+
+.mechanic-admin-availability {
+  display: block;
+  margin-top: 5px;
+  color: #8792a4;
+  font-size: 10px;
+}
+
+.mechanic-workload {
+  min-width: 27px;
+  height: 27px;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 8px;
+  color: #245bd6;
+  background: #edf3ff;
+  font-weight: 700;
+}
+
+.mechanic-row-actions {
+  display: flex;
+  gap: 2px;
+}
+
+.mechanic-icon-button {
+  width: 30px;
+  height: 30px;
+  display: inline-grid;
+  place-items: center;
+  padding: 0;
+  border: 0;
+  border-radius: 6px;
+  color: #69778d;
+  background: transparent;
+  cursor: pointer;
+}
+
+.mechanic-icon-button:hover {
+  color: #245bd6;
+  background: #edf3ff;
+}
+
+.mechanic-icon-button.mechanic-delete-action:hover {
+  color: #bd2b25;
+  background: #fff0ef;
+}
+
+.mechanic-empty-state {
+  height: 100px;
+  color: #758197 !important;
+  text-align: center;
+  white-space: normal !important;
+}
+
+.assignment-count {
+  padding: 6px 10px;
+  border-radius: 20px;
+  color: #245bd6;
+  background: #edf3ff;
+  font-size: 11px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.assignment-heading-actions {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.assignment-empty-eligible {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 20px;
+  border-top: 1px solid #f1e4c5;
+  border-bottom: 1px solid #f1e4c5;
+  color: #825b13;
+  background: #fffbeb;
+  font-size: 12px;
+}
+
+.assignment-table {
+  min-width: 850px;
+}
+
+.repair-table {
+  min-width: 1170px;
+}
+
+.repair-status {
+  display: inline-flex;
+  align-items: center;
+  min-height: 25px;
+  padding: 4px 9px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.repair-status-confirmed { color: #1d4ed8; background: #dbeafe; }
+.repair-status-in-progress { color: #6d28d9; background: #ede9fe; }
+
+.assignment-booking-link,
+.mechanic-booking-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0;
+  border: 0;
+  color: #245bd6;
+  background: transparent;
+  font: inherit;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.assignment-booking-link:hover,
+.mechanic-booking-link:hover {
+  text-decoration: underline;
+}
+
+.mechanic-booking-link {
+  white-space: nowrap;
+}
+
+.mechanic-status-sections {
+  overflow: hidden;
+}
+
+.mechanic-people-list {
+  display: grid;
+  gap: 10px;
+  padding: 0 20px 20px;
+}
+
+.mechanic-person-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  padding: 13px;
+  border: 1px solid #edf0f5;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.mechanic-person-info {
+  display: grid;
+  flex: 1 1 auto;
+  gap: 4px;
+  min-width: 150px;
+}
+
+.mechanic-person-info strong {
+  color: #27364b;
+  font-size: 12px;
+}
+
+.mechanic-person-info span,
+.mechanic-person-info small {
+  color: #78859a;
+  font-size: 10px;
+}
+
+.mechanic-person-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.mechanic-person-actions .assignment-select {
+  width: min(320px, 30vw);
+}
+
+.mechanic-button:disabled {
+  cursor: not-allowed;
+  opacity: .55;
+}
+
+.mechanic-section-empty {
+  padding: 19px;
+  margin: 0;
+  border: 1px dashed #dce2eb;
+  border-radius: 9px;
+  color: #758197;
+  background: #fafbfd;
+  font-size: 12px;
+  text-align: center;
+}
+
+.assignment-booking-id,
+.assignment-customer,
+.assignment-secondary {
+  display: block;
+}
+
+.assignment-booking-id {
+  color: #245bd6;
+  font-size: 11px;
+}
+
+.assignment-need-label {
+  display: inline-block;
+  margin-top: 5px;
+  color: #a16207;
+  font-size: 10px;
+}
+
+.assignment-assigned-label {
+  color: #71809a;
+}
+
+.assignment-customer {
+  color: #27364b;
+}
+
+.assignment-secondary {
+  margin-top: 4px;
+  color: #8792a4;
+  font-size: 10px;
+}
+
+.assignment-select {
+  width: 190px;
+  min-height: 35px;
+  padding: 6px 9px;
+  border: 1px solid #dce2eb;
+  border-radius: 7px;
+  color: #34445c;
+  background: #fff;
+  font: inherit;
+  font-size: 11px;
+}
+
+.assignment-select:focus {
+  border-color: #75a0ef;
+  outline: 0;
+  box-shadow: 0 0 0 3px #245bd61a;
+}
+
+.assignment-select-pending {
+  border-color: #f2cf79;
+  background: #fffcf2;
+}
+
+.assignment-current-mechanic {
+  display: block;
+  max-width: 300px;
+  margin-top: 5px;
+  color: #71809a;
+  font-size: 10px;
+  white-space: normal;
+}
+
+.assignment-unassigned {
+  color: #a16207;
+  font-weight: 650;
+}
+
+.mechanic-modal-backdrop {
+  position: fixed;
+  z-index: 20;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: #10182880;
+}
+
+.mechanic-modal {
+  width: min(100%, 700px);
+  max-height: min(90vh, 900px);
+  overflow-y: auto;
+  padding: 23px;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 20px 70px #10182840;
+}
+
+.mechanic-modal-header {
+  align-items: flex-start;
+  margin-bottom: 18px;
+}
+
+.mechanic-modal-header h2 {
+  margin: 5px 0 0;
+  color: #1e293b;
+  font-size: 21px;
+}
+
+.mechanic-modal-header .mechanic-icon-button {
+  width: 34px;
+  height: 34px;
+}
+
+.mechanic-id-callout {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 12px;
+  margin-bottom: 17px;
+  border: 1px solid #e5eaf2;
+  border-radius: 8px;
+  color: #71809a;
+  background: #f8fafd;
+  font-size: 12px;
+}
+
+.mechanic-id-callout strong {
+  margin-left: auto;
+  color: #34445c;
+  font-weight: 650;
+}
+
+.mechanic-form-error {
+  padding: 9px 11px;
+  margin: 0 0 14px;
+  border-radius: 7px;
+  color: #b42318;
+  background: #fff0ef;
+  font-size: 12px;
+}
+
+.mechanic-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px 13px;
+}
+
+.mechanic-form-grid label {
+  display: grid;
+  align-content: start;
+  gap: 7px;
+  color: #46546a;
+  font-size: 12px;
+  font-weight: 650;
+}
+
+.mechanic-form-grid label b {
+  color: #d0443b;
+}
+
+.mechanic-form-grid input,
+.mechanic-form-grid select,
+.mechanic-form-grid textarea {
+  width: 100%;
+  min-height: 40px;
+  padding: 9px 10px;
+  border: 1px solid #dce2eb;
+  border-radius: 7px;
+  outline: none;
+  color: #263449;
+  background: #fff;
+  font: inherit;
+  font-size: 12px;
+}
+
+.mechanic-form-grid textarea {
+  resize: vertical;
+}
+
+.mechanic-form-grid input:focus,
+.mechanic-form-grid select:focus,
+.mechanic-form-grid textarea:focus {
+  border-color: #75a0ef;
+  box-shadow: 0 0 0 3px #245bd61a;
+}
+
+.mechanic-form-grid label > small {
+  color: #8792a4;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.mechanic-address-field {
+  grid-column: 1 / -1;
+}
+
+.mechanic-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 9px;
+  margin-top: 22px;
+}
+
+.mechanic-profile-modal {
+  width: min(100%, 620px);
+}
+
+.mechanic-profile-banner {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px;
+  margin-bottom: 16px;
+  border: 1px solid #e8ecf3;
+  border-radius: 11px;
+  background: #f8fafd;
+}
+
+.mechanic-profile-banner h3 {
+  margin: 0 0 4px;
+  color: #253247;
+  font-size: 17px;
+}
+
+.mechanic-profile-banner p {
+  margin: 0 0 8px;
+  color: #738096;
+  font-size: 12px;
+}
+
+.mechanic-profile-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.mechanic-profile-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  min-width: 0;
+  padding: 11px;
+  border: 1px solid #edf0f5;
+  border-radius: 9px;
+}
+
+.mechanic-profile-info > span {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 8px;
+  color: #245bd6;
+  background: #edf3ff;
+}
+
+.mechanic-profile-info > div {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+}
+
+.mechanic-profile-info small {
+  color: #78859a;
+  font-size: 10px;
+}
+
+.mechanic-profile-info strong {
+  color: #27364b;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+
+.mechanic-profile-skills,
+.mechanic-profile-bookings {
+  margin-top: 16px;
+}
+
+.mechanic-profile-skills > strong,
+.mechanic-profile-bookings > strong {
+  display: block;
+  margin-bottom: 9px;
+  color: #34445c;
+  font-size: 12px;
+}
+
+.mechanic-profile-skills > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.mechanic-skill-tag {
+  padding: 6px 9px;
+  border-radius: 20px;
+  color: #42526b;
+  background: #f0f3f8;
+  font-size: 10px;
+}
+
+.mechanic-no-skills {
+  color: #8792a4;
+  font-size: 11px;
+}
+
+.mechanic-profile-bookings > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 9px 0;
+  border-bottom: 1px solid #edf0f5;
+  color: #34445c;
+  font-size: 11px;
+}
+
+.mechanic-profile-bookings small {
+  color: #78859a;
+}
+
+@media (max-width: 1100px) {
+  .mechanic-metrics-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .mechanics-page-heading {
+    align-items: flex-start;
+  }
+
+  .mechanic-section-heading {
+    padding: 16px 14px;
+  }
+
+  .assignment-heading-actions {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .mechanic-filters {
+    flex-wrap: wrap;
+    padding: 0 14px 14px;
+  }
+
+  .mechanic-search-control {
+    flex-basis: 100%;
+  }
+
+  .mechanic-filter-control {
+    flex: 1;
+    width: auto;
+  }
+
+  .mechanic-person-card {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .mechanic-person-actions {
+    width: 100%;
+    justify-content: flex-start;
+    padding-left: 48px;
+  }
+
+  .mechanic-person-actions .assignment-select {
+    width: min(100%, 340px);
+  }
+}
+
+@media (max-width: 520px) {
+  .mechanics-page-heading {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .add-mechanic-button {
+    width: 100%;
+  }
+
+  .mechanic-metrics-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .mechanic-metric-card {
+    gap: 9px;
+    padding: 11px 9px;
+  }
+
+  .mechanic-metric-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .mechanic-metric-card p {
+    white-space: normal;
+  }
+
+  .mechanic-metric-card strong {
+    font-size: 20px;
+  }
+
+  .mechanic-section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .assignment-empty-eligible {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 12px 14px;
+  }
+
+  .assignment-heading-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .mechanic-sort-control,
+  .mechanic-filter-control {
+    width: 100%;
+  }
+
+  .mechanic-modal-backdrop {
+    align-items: end;
+    padding: 0;
+  }
+
+  .mechanic-modal {
+    width: 100%;
+    max-height: 92vh;
+    padding: 19px 16px;
+    border-radius: 15px 15px 0 0;
+  }
+
+  .mechanic-form-grid,
+  .mechanic-profile-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mechanic-address-field {
+    grid-column: auto;
+  }
+
+  .mechanic-modal-actions .mechanic-button {
+    flex: 1;
+  }
+
+  .mechanic-profile-bookings > div {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .mechanic-people-list {
+    padding: 0 12px 14px;
+  }
+
+  .mechanic-person-actions {
+    padding-left: 0;
+  }
+
+  .mechanic-person-actions > .mechanic-button {
+    flex: 1 1 100%;
+  }
+}

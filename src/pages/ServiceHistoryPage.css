@@ -1,0 +1,619 @@
+.service-history-page {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.history-page-heading {
+  margin-bottom: 20px;
+}
+
+.history-page-heading h1 {
+  margin: 4px 0 7px;
+}
+
+.history-page-heading p {
+  margin: 0;
+  color: #738096;
+  font-size: 14px;
+}
+
+.history-eyebrow {
+  color: #71809a;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.3px;
+}
+
+.history-data-notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  padding: 11px 14px;
+  margin-bottom: 17px;
+  border: 1px solid #dce9ff;
+  border-radius: 9px;
+  color: #59677c;
+  background: #edf4ff;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.history-data-notice > span {
+  width: 8px;
+  height: 8px;
+  flex: 0 0 auto;
+  margin-top: 4px;
+  border-radius: 50%;
+  background: #3974e8;
+}
+
+.history-vehicle-card,
+.history-records-card {
+  overflow: hidden;
+  margin-bottom: 19px;
+  border: 1px solid #e8ecf3;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 3px 12px #1b2b4508;
+}
+
+.history-vehicle-card {
+  padding: 18px 20px;
+}
+
+.history-vehicle-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+  color: #245bd6;
+}
+
+.history-vehicle-heading h2 {
+  margin: 0 0 4px;
+  color: #253247;
+  font-size: 16px;
+}
+
+.history-vehicle-heading p {
+  margin: 0;
+  color: #738096;
+  font-size: 11px;
+}
+
+.history-vehicle-controls,
+.history-filters {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.history-search,
+.history-select,
+.history-filter,
+.history-date-filter {
+  height: 38px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 10px;
+  border: 1px solid #dce2eb;
+  border-radius: 7px;
+  color: #8290a4;
+  background: #fff;
+}
+
+.history-search {
+  flex: 1;
+  min-width: 180px;
+}
+
+.history-search input,
+.history-select select,
+.history-filter select,
+.history-date-filter input {
+  width: 100%;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  color: #263449;
+  background: transparent;
+  font: inherit;
+  font-size: 11px;
+}
+
+.history-select {
+  width: min(440px, 50%);
+}
+
+.history-select select,
+.history-filter select {
+  appearance: none;
+  cursor: pointer;
+}
+
+.history-select > svg,
+.history-filter > svg {
+  flex: 0 0 auto;
+  pointer-events: none;
+}
+
+.history-search:focus-within,
+.history-select:focus-within,
+.history-filter:focus-within,
+.history-date-filter:focus-within {
+  border-color: #75a0ef;
+  box-shadow: 0 0 0 3px #245bd61a;
+}
+
+.history-selected-vehicle {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 12px;
+  margin-top: 13px;
+  border: 1px solid #e8ecf3;
+  border-radius: 9px;
+  background: #f8fafd;
+}
+
+.history-car-icon {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 10px;
+  color: #245bd6;
+  background: #eaf1ff;
+}
+
+.history-selected-vehicle > div {
+  display: grid;
+  gap: 3px;
+  min-width: 0;
+}
+
+.history-selected-vehicle > div:nth-of-type(2) {
+  margin-left: auto;
+}
+
+.history-selected-vehicle small,
+.history-selected-vehicle span:not(.history-car-icon) {
+  color: #78859a;
+  font-size: 10px;
+}
+
+.history-selected-vehicle strong {
+  color: #27364b;
+  font-size: 12px;
+}
+
+.history-linked-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 8px;
+  border-radius: 20px;
+  color: #15803d;
+  background: #dcfce7;
+  font-size: 9px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.history-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 13px;
+  margin-bottom: 20px;
+}
+
+.history-metric-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  padding: 16px;
+  border: 1px solid #e8ecf3;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 3px 12px #1b2b4508;
+}
+
+.history-metric-icon {
+  width: 39px;
+  height: 39px;
+  display: grid;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 10px;
+}
+
+.metric-blue { color: #245bd6; background: #eaf1ff; }
+.metric-green { color: #16834a; background: #e5f8ee; }
+.metric-amber { color: #b77908; background: #fff5dc; }
+
+.history-metric-card p {
+  margin: 0 0 5px;
+  color: #738096;
+  font-size: 11px;
+}
+
+.history-metric-card strong {
+  color: #1e293b;
+  font-size: 20px;
+}
+
+.history-metric-card small {
+  display: block;
+  margin-top: 3px;
+  color: #8792a4;
+  font-size: 9px;
+}
+
+.history-section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 19px 20px 14px;
+}
+
+.history-section-heading h2 {
+  margin: 0 0 5px;
+  color: #253247;
+  font-size: 17px;
+}
+
+.history-section-heading p {
+  margin: 0;
+  color: #738096;
+  font-size: 11px;
+}
+
+.history-sort-button {
+  min-height: 35px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 0 10px;
+  border: 1px solid #dce2eb;
+  border-radius: 7px;
+  color: #46546a;
+  background: #fff;
+  font: inherit;
+  font-size: 11px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.history-filters {
+  flex-wrap: wrap;
+  padding: 0 20px 15px;
+}
+
+.history-filter {
+  width: 155px;
+}
+
+.history-date-filter {
+  width: 145px;
+}
+
+.history-date-filter input {
+  font-size: 10px;
+}
+
+.history-clear-button {
+  padding: 6px 2px;
+  border: 0;
+  color: #245bd6;
+  background: none;
+  font: inherit;
+  font-size: 11px;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.history-filter-error {
+  margin: -4px 20px 12px;
+  color: #b42318;
+  font-size: 11px;
+}
+
+.service-timeline {
+  padding: 3px 20px 19px;
+}
+
+.service-timeline-item {
+  display: grid;
+  grid-template-columns: 19px minmax(0, 1fr);
+  gap: 12px;
+}
+
+.timeline-rail {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.timeline-rail::after {
+  position: absolute;
+  top: 12px;
+  bottom: -1px;
+  width: 1px;
+  content: "";
+  background: #dfe5ee;
+}
+
+.service-timeline-item:last-child .timeline-rail::after {
+  display: none;
+}
+
+.timeline-dot {
+  z-index: 1;
+  width: 11px;
+  height: 11px;
+  margin-top: 20px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: #3974e8;
+  box-shadow: 0 0 0 2px #cbdcff;
+}
+
+.timeline-completed { background: #16834a; box-shadow: 0 0 0 2px #b8e9ca; }
+.timeline-in-progress { background: #7147c8; box-shadow: 0 0 0 2px #ded0fb; }
+.timeline-pending,
+.timeline-confirmed { background: #c18414; box-shadow: 0 0 0 2px #f4dfaa; }
+.timeline-cancelled { background: #8a94a5; box-shadow: 0 0 0 2px #dce1e8; }
+
+.service-record-card {
+  min-width: 0;
+  padding: 15px;
+  margin-bottom: 12px;
+  border: 1px solid #e8ecf3;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.service-record-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.service-record-date {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #748198;
+  font-size: 10px;
+}
+
+.service-record-heading h3 {
+  margin: 6px 0 0;
+  color: #253247;
+  font-size: 14px;
+}
+
+.history-booking-status {
+  padding: 5px 8px;
+  border-radius: 20px;
+  font-size: 9px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.history-status-completed { color: #15803d; background: #dcfce7; }
+.history-status-in-progress { color: #6d28d9; background: #ede9fe; }
+.history-status-confirmed { color: #1d4ed8; background: #dbeafe; }
+.history-status-pending { color: #a16207; background: #fef3c7; }
+.history-status-cancelled { color: #667085; background: #eef1f5; }
+
+.service-record-description {
+  margin: 10px 0;
+  color: #59677c;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.history-missing {
+  color: #9aa3b1;
+  font-style: italic;
+}
+
+.service-record-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px 16px;
+  padding: 10px 0;
+  border-top: 1px solid #edf0f5;
+  border-bottom: 1px solid #edf0f5;
+}
+
+.service-record-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #526075;
+  font-size: 10px;
+}
+
+.service-record-meta svg {
+  color: #8290a4;
+}
+
+.service-record-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  padding: 11px 0 2px;
+}
+
+.service-record-detail-grid > div {
+  display: grid;
+  align-content: start;
+  gap: 5px;
+  min-width: 0;
+}
+
+.service-record-detail-grid small {
+  color: #8792a4;
+  font-size: 9px;
+}
+
+.service-record-detail-grid strong {
+  color: #46546a;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.service-record-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  padding-top: 12px;
+}
+
+.history-link-button,
+.history-unavailable {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 31px;
+  padding: 0 9px;
+  border: 1px solid #dce2eb;
+  border-radius: 7px;
+  color: #245bd6;
+  background: #fff;
+  font-size: 10px;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.history-link-button:hover {
+  border-color: #b7cafa;
+  background: #f4f7ff;
+}
+
+.history-unavailable {
+  border-color: transparent;
+  color: #8a94a5;
+  background: #f6f7f9;
+}
+
+.history-empty-state {
+  display: grid;
+  justify-items: center;
+  gap: 9px;
+  padding: 45px 20px;
+  color: #8490a2;
+  text-align: center;
+}
+
+.history-empty-state strong {
+  color: #34445c;
+  font-size: 13px;
+}
+
+.history-empty-state span {
+  max-width: 410px;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 900px) {
+  .service-record-detail-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 650px) {
+  .history-vehicle-controls {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .history-search,
+  .history-select {
+    width: 100%;
+  }
+
+  .history-selected-vehicle {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .history-selected-vehicle > div:nth-of-type(2) {
+    margin-left: 0;
+  }
+
+  .history-linked-tag {
+    margin-left: auto;
+  }
+
+  .history-metrics-grid {
+    grid-template-columns: 1fr;
+    gap: 9px;
+  }
+
+  .history-metric-card {
+    padding: 12px;
+  }
+
+  .history-section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 16px 14px;
+  }
+
+  .history-filters {
+    padding: 0 14px 14px;
+  }
+
+  .history-filter,
+  .history-date-filter {
+    flex: 1 1 45%;
+  }
+
+  .service-timeline {
+    padding: 3px 12px 14px;
+  }
+
+  .service-timeline-item {
+    grid-template-columns: 15px minmax(0, 1fr);
+    gap: 8px;
+  }
+
+  .service-record-card {
+    padding: 12px;
+  }
+
+  .service-record-meta {
+    display: grid;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 420px) {
+  .service-record-detail-grid {
+    grid-template-columns: 1fr;
+  }
+}
